@@ -7,26 +7,28 @@
     <title>Formulario</title>
 </head>
 <body>
-    
-    <h1>Feedback form</h1>
-    <form method = "post" action = "https://jkorpela.fi/cgi-bin/echo.cgi" autocomplete="on">
-        <input type = "hidden" name = "address"
-        value = jeandsonsilva@jean.com>
-        <input type = "hidden" name = "subject"
-        value = Feedback form>
-        <input type = "hidden" name = "redirect"
-        value = main.html>
+    <table border ="1"><tbody>
+
         
-        <p><label>Primeiro Nome:
-            <input type = "text" id="Pnome" placeholder="Primeiro Nome"/>
-        </label></p>
-        <p><label>Ultimo Nome:
-            <input type="text" id="Lname" placeholder="Último Nome"/>
-        </label></p>
-        <p><label>Endereço de email:
-            <input type="email" id="email" placeholder="name@domain.com"/>
-        </label></p>
-        <p>
+        <td><h1>Feedback form</h1>
+        <form method = "post" action = "https://jkorpela.fi/cgi-bin/echo.cgi" autocomplete="on">
+            <input type = "hidden" name = "address"
+            value = jeandsonsilva@jean.com>
+            <input type = "hidden" name = "subject"
+            value = Feedback form>
+            <input type = "hidden" name = "redirect"
+            value = main.html>
+            
+            <p><label>Primeiro Nome:
+                <input type = "text" id="Pnome" placeholder="Primeiro Nome"/>
+            </label></p>
+            <p><label>Ultimo Nome:
+                <input type="text" id="Lname" placeholder="Último Nome"/>
+            </label></p>
+            <p><label>Endereço de email:
+                <input type="email" id="email" placeholder="name@domain.com"/>
+            </label></p>
+            <p>
             <label>Estado:
                 <select name = "estados">
                     <option selected>AC</option>
@@ -97,6 +99,8 @@
         <p>
             <input type="reset" value="Redefinir Formulario">
             <input type="submit" value="Enviar Pesquisa">
-        </p>
-    </body>
-    </html>
+        </p></td>
+        </tbody>
+    </table>
+</body>
+</html>
