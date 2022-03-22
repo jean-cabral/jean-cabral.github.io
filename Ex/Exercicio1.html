@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario De Registro Com Pesquisa Opcional</h1>
+
+    <form method="post" autocomplete="on">
+        <p><label>Nome: 
+            <input type="text" id="fistName"
+            placeholder="Primeiro Nome" />
+        </label></p>
+        <p><label>Sobrenome: 
+            <input type="text" id="LastName"
+            placeholder="Sobrenome"/>
+            </label></p>
+        <p><label>Email: 
+            <input type = "email" id = "email"
+            placeholder = "name@domain.com" />
+            </label></p>
+        <p><details>
+            <summary>Pesquisa Opcional</summary>
+            <p><label for="txtList"> Qual seu semestre?
+            <input type="text" id="txtList"
+            placeholder="Selecione o periodo" list = "periodo"/>
+            <datalist id = "periodo">
+                <option value="Primeiro Período">
+                <option value="Segundo Período">
+                <option value="Terceiro Período">
+                <option value="Quarto Período">
+                <option value="Quinto Período">
+                <option value="Sexto Período">
+                <option value="Setimo Período">
+                <option value="Oitavo Período">
+            </datalist></label></p>
+            
+            </p>
+        </label></details></p>
+        <p> <input type = "reset" value="Reset">
+            <input type = "submit" value="Submit"></p>
+    </form>
+</body>
+</html>

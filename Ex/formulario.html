@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    
+    <h1>Feedback form</h1>
+    <form method = "post" action = "https://jkorpela.fi/cgi-bin/echo.cgi" autocomplete="on">
+        <input type = "hidden" name = "address"
+        value = jeandsonsilva@jean.com>
+        <input type = "hidden" name = "subject"
+        value = Feedback form>
+        <input type = "hidden" name = "redirect"
+        value = main.html>
+        
+        <p><label>Primeiro Nome:
+            <input type = "text" id="Pnome" placeholder="Primeiro Nome"/>
+        </label></p>
+        <p><label>Ultimo Nome:
+            <input type="text" id="Lname" placeholder="Último Nome"/>
+        </label></p>
+        <p><label>Endereço de email:
+            <input type="email" id="email" placeholder="name@domain.com"/>
+        </label></p>
+        <p>
+            <label>Estado:
+                <select name = "estados">
+                    <option selected>AC</option>
+                    <option>AL</option>
+                    <option>AP</option>
+                    <option>AM</option>
+                    <option>BA</option>
+                    <option>CE</option>
+                    <option>DF</option>
+                    <option>ES</option>
+                    <option>GO</option>
+                    <option>MA</option>
+                    <option>MT</option>
+                    <option>MS</option>
+                    <option>MG</option>
+                    <option>PA</option>
+                    <option>PB</option>
+                    <option>PR</option>
+                    <option>PE</option>
+                    <option>PI</option>
+                    <option>RJ</option>
+                    <option>RN</option>
+                    <option>RS</option>
+                    <option>RO</option>
+                    <option>RR</option>
+                    <option>SC</option>
+                    <option>SP</option>
+                    <option>SE</option>
+                    <option>TO</option>
+                </select>
+            </label>
+        </p>
+        <p><label>Senha:
+            <input type="password" placeholder="Digite sua Senha" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" required /> Minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character: 
+        </label></p>
+        <p><label>Gênero:
+            <label><input name="gender" type="radio" value="masc" checked> Masculino ou</label>
+            
+            <label><input name="gender" type="radio" value="fem" checked>Feminino
+            </label>
+        </label>
+    </p>
+    <p>Voce gosta do mugido da cabra?
+        <label><input name = "sheep" type="checkbox" value="SIM"></label>Sim</label>
+    </p>
+    <p><label>Quantos copos de cafe voce bebe por dia?
+        <br>
+        <label><input name="cafe" type="radio" value="0a2" checked> 0 a 2 Copo(s)</label>
+        <label><input name="cafe" type="radio" value="2a4" checked>2 a 4 Copos</label>
+        <br>
+        <label><input name="cafe" type="radio" value="4a8" checked>4 a 8 Copos</label>
+        <label><input name="cafe" type="radio" value="8a16" checked>8 a 16 Copos</label>
+    </label>
+    <p>
+        <label>Voce possui um computador pessoal?
+            <select name = "pc">
+                <option selected>SIM</option>
+                <option>NÃO</option>
+            </select>
+        </label>
+        <p><label>Quanto tempo levaria para fazer um formulário html? (em minutos)<br>
+            <input name="formtime" type="number" >
+        </label></p>
+        <p><label>Comentarios: <br>
+            <textarea name="comentario"
+            rows="4" cols="36"></textarea>
+        </label></p>
+        <p>
+            <input type="reset" value="Redefinir Formulario">
+            <input type="submit" value="Enviar Pesquisa">
+        </p>
+    </body>
+    </html>
