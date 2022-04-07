@@ -1,34 +1,46 @@
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-image: url(img/oi.png);
+    background-image: url(img/aq.png);
     background-attachment: fixed;
-    background-size: 100%;
+    color: white;
     margin-top: 5px;
     
 }
 img{
     opacity: 0,5;
-    
-    
 }
+li{
+    list-style-type: square;
+}
+a:link {
+    color: rgba(0, 110, 255, 0.658);
+  }
 a:hover{
     color: lightcoral;
 }
+a:visited {
+    color: green;
+}
+a:active {
+    color: hotpink;
+  }
 
 .footer{
     display: flex;
     width: 100%;
     justify-content: center;
-    background-color: #eee;
+    background-color: rgba(238, 238, 238, 0.404);
     padding: 10px;
     margin-top: 5px;
+    color: black;
 }
 .social{
     width: 100%;
     margin: auto;
-    background-color: aliceblue;
+    background-color:rgba(78, 15, 63, 0.479);
     font-family:'Times New Roman', Times, serif;
     font-size: large;
     padding: 5px;
     
 }
+a
